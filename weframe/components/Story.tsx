@@ -1,14 +1,16 @@
+import component from "@/app/bloom"
+import eyeIcon from "@/assets/icons/eye.svg"
+import menuIcon from "@/assets/icons/menu.svg"
+import statusUpIcon from "@/assets/icons/status-up.svg"
+import {useRouter} from "next/router"
 import {ComponentPropsWithoutRef} from "react"
-import eyeIcon from "../assets/icons/eye.svg"
-import menuIcon from "../assets/icons/menu.svg"
-import statusUpIcon from "../assets/icons/status-up.svg"
-import component from "../bloom"
 import {Button} from "./primitives/Button"
 import {Ellipsis} from "./primitives/Ellipsis"
 import {SmallTag} from "./primitives/SmallTag"
 import {Tag} from "./primitives/Tag"
 
 export interface StoryProps extends ComponentPropsWithoutRef<"div"> {
+    pathid: number
     image: string
     views: number
     title: string
@@ -20,6 +22,7 @@ export interface StoryProps extends ComponentPropsWithoutRef<"div"> {
 export function Story({
     className,
     children,
+    pathid,
     image,
     views,
     title,
@@ -28,7 +31,11 @@ export function Story({
     context,
     ...props
 }: StoryProps) {
+    const router = useRouter()
     const $ = component(className, "Story")
+    function onView() {
+        router.push(`/Story/${pathid}`)
+    }
     return (
         <div
             className={$()}
@@ -60,7 +67,7 @@ export function Story({
                 )}
             </div>
             <div className={$("Buttons")}>
-                <Button className={$("View")} variant="primary">
+                <Button className={$("View")} variant="primary" onClick={onView}>
                     View
                 </Button>
                 <Button variant="secondary">

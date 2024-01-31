@@ -1,6 +1,6 @@
+import component from "@/app/bloom"
+import menuIcon from "@/assets/icons/menu.svg"
 import {ComponentPropsWithoutRef} from "react"
-import menuIcon from "../assets/icons/menu.svg"
-import component from "../bloom"
 import {Button} from "./primitives/Button"
 
 export interface AdvertProps extends ComponentPropsWithoutRef<"div"> {

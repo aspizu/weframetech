@@ -1,14 +1,15 @@
-@use "./components/primitives/Button.scss";
-@use "./components/primitives/Ellipsis.scss";
-@use "./components/primitives/SmallTag.scss";
-@use "./components/primitives/Tag.scss";
-@use "./components/Advert.scss";
-@use "./components/Article.scss";
-@use "./components/Project.scss";
-@use "./components/Sidebar.scss";
-@use "./components/Story.scss";
-@use "./pages/Content.scss";
-@use "./page.scss";
+@use "@/components/primitives/Button.scss";
+@use "@/components/primitives/Ellipsis.scss";
+@use "@/components/primitives/SmallTag.scss";
+@use "@/components/primitives/Tag.scss";
+@use "@/components/Advert.scss";
+@use "@/components/Article.scss";
+@use "@/components/Project.scss";
+@use "@/components/Sidebar.scss";
+@use "@/components/Story.scss";
+@use "@/components/layout.scss";
+@use "@/pages/Content.scss";
+@use "@/pages/Story/StoryPage.scss";
 
 * {
     padding: 0;

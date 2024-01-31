@@ -13,11 +13,13 @@
         "noFallthroughCasesInSwitch": true,
         "noImplicitAny": true,
         "noImplicitReturns": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./*"],
+            "@/.next/*": ["./.next/*"]
+        },
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "paths": {
-            "@/*": ["./*"]
-        },
         "plugins": [
             {
                 "name": "next"

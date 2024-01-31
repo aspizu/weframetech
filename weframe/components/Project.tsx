@@ -1,5 +1,5 @@
+import component from "@/app/bloom"
 import {ComponentPropsWithoutRef} from "react"
-import component from "../bloom"
 
 export interface ProjectProps extends ComponentPropsWithoutRef<"div"> {
     icon: string
