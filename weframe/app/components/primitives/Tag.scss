@@ -1,0 +1,24 @@
+@mixin tag($background, $foreground) {
+    background: $background;
+    color: $foreground;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.62rem 1.25rem;
+    border-radius: 0.3125rem;
+    &--success {
+        @include tag(#e4fff8, #0dad82);
+    }
+    &--primary {
+        @include tag(#e3d5ff, #7950f2);
+    }
+    &--secondary {
+        @include tag(#f8fafb, #a0a3bd);
+    }
+    &--ternary {
+        @include tag(#daf1fb, #58a4ff);
+    }
+}

@@ -1,0 +1,45 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 3.25rem;
+    gap: 2rem;
+    &__greeting {
+        display: flex;
+        flex-direction: column;
+        color: #a0a3bd;
+        font-size: 1.0625rem;
+    }
+    &__greeting-heading {
+        font-size: 2.1875rem;
+        font-weight: 600;
+        color: #212121;
+    }
+    &__section {
+        display: flex;
+        overflow-x: auto;
+        gap: 2rem;
+        &--same-width > * {
+            flex: 1 1 0px;
+        }
+    }
+    &__section-heading {
+        display: flex;
+        align-items: center;
+    }
+    &__section-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-right: auto;
+    }
+    &__section-link {
+        text-decoration: none;
+        color: #9058ff;
+        font-size: 1.25rem;
+        font-weight: 600;
+        &:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 0.15rem;
+            text-underline-offset: 0.15rem;
+        }
+    }
+}

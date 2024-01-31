@@ -1,0 +1,64 @@
+.article {
+    background: white;
+    width: 29.5rem;
+    border-radius: 0.625rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1.19rem;
+    gap: 1.19rem;
+    &__image {
+        width: 27.1875rem;
+        height: 14.25rem;
+        flex-shrink: 0;
+        border-radius: 0.625rem;
+    }
+    &__details {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    &__category {
+        color: #9058ff;
+        font-weight: 800;
+    }
+    &__date {
+        font-weight: 600;
+        color: #a0a3bd;
+    }
+    &__pfp {
+        margin-left: auto;
+        width: 1.875rem;
+        height: 1.875rem;
+        flex-shrink: 0;
+        border-radius: 9999px;
+    }
+    &__author {
+        font-weight: 600;
+    }
+    &__heading {
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        color: #22285e;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-right: auto;
+    }
+    &__subtitle {
+        color: #a0a3bd;
+    }
+    &__tags {
+        display: flex;
+        gap: 0.69rem;
+    }
+    &__buttons {
+        margin-top: auto;
+        display: flex;
+        gap: 0.7rem;
+    }
+    &__view {
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,9 @@
+@use "./common.scss" as c;
+
+.home {
+    display: grid;
+    grid-template-columns: 18.5rem minmax(0, 1fr);
+    @media screen and (width < c.$width-md) {
+        grid-template-columns: 0 minmax(0, 1fr);
+    }
+}

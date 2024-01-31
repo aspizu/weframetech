@@ -1,0 +1,47 @@
+.story {
+    display: flex;
+    flex-direction: column;
+    width: 21.25rem;
+    height: 31.25rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    gap: 0.8rem;
+    box-shadow: 0 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.1);
+    --story-image: url("");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 61.46%),
+        var(--story-image), lightgray 50% / cover no-repeat;
+    &__title {
+        margin-top: auto;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: white;
+        line-height: 2.25rem;
+    }
+    &__info {
+        display: flex;
+        gap: 0.3rem;
+        margin-left: auto;
+    }
+    &__details {
+        display: flex;
+        align-items: center;
+        color: white;
+        gap: 0.1rem;
+    }
+    &__category {
+        font-weight: 900;
+    }
+    &__date {
+        color: #a0a3bd;
+        margin-right: auto;
+        font-weight: 600;
+    }
+    &__buttons {
+        display: flex;
+        gap: 0.5rem;
+    }
+    &__view {
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,61 @@
+@use "../common.scss" as c;
+
+.project {
+    display: inline-flex;
+    gap: 0.7rem;
+    border-radius: 1.25rem;
+    padding: 2rem;
+    background: white;
+    flex-shrink: 0;
+    color: #22285e;
+    &__icon {
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 99999px;
+        background: #e8e9ff;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    &__title {
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
+    @media screen and (c.$width-sm < width < c.$width-md) {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        &__content {
+            align-items: center;
+        }
+        &__title {
+            font-size: 1rem;
+        }
+    }
+    @media screen and (width < c.$width-sm) {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        &__icon {
+            width: 3rem;
+            height: 3rem;
+            & > img {
+                scale: 0.7;
+            }
+        }
+        &__content {
+            align-items: center;
+        }
+        &__title {
+            font-size: 1rem;
+        }
+        &__description {
+            font-size: 0.8rem;
+        }
+    }
+}

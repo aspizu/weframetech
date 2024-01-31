@@ -1,0 +1,27 @@
+@use "./components/primitives/Button.scss";
+@use "./components/primitives/Ellipsis.scss";
+@use "./components/primitives/SmallTag.scss";
+@use "./components/primitives/Tag.scss";
+@use "./components/Advert.scss";
+@use "./components/Article.scss";
+@use "./components/Project.scss";
+@use "./components/Sidebar.scss";
+@use "./components/Story.scss";
+@use "./pages/Content.scss";
+@use "./page.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: normal normal normal 1rem;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    background: #f8fafb;
+    color: #212121;
+}

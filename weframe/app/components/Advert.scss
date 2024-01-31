@@ -1,0 +1,33 @@
+.advert {
+    display: inline-grid;
+    grid-template-columns: 14.125rem 17.12rem;
+    border-radius: 1.25rem;
+    background: white;
+    box-shadow: 0px 0px 10.87px 0px rgba(0, 0, 0, 0.25);
+    &__image {
+        border-top-left-radius: 1.25rem;
+        border-bottom-left-radius: 1.25rem;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+    &__title {
+        color: #22285e;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    &__description {
+        color: #a0a3bd;
+    }
+    &__buttons {
+        margin-top: auto;
+        display: flex;
+        gap: 0.5rem;
+    }
+    &__visit {
+        flex-grow: 1;
+    }
+}
